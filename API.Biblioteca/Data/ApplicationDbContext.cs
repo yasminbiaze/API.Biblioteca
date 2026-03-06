@@ -17,5 +17,13 @@ namespace API.Biblioteca.Data
         public DbSet<Genero> Genero { get; set; }
         public DbSet<Livro> Livro { get; set; }
         public DbSet<LivroGenero> LivrosGenero { get; set; }
+    // A classe ApplicationDbContext herda de IdentityDbContext, que é uma classe fornecida pelo ASP.NET Core Identity para gerenciar a autenticação e autorização dos usuários.
+public DbSet<API.Biblioteca.Models.Cliente> Cliente { get; set; } = default!;
+    // A classe ApplicationDbContext herda de IdentityDbContext, que é uma classe fornecida pelo ASP.NET Core Identity para gerenciar a autenticação e autorização dos usuários.
+public DbSet<API.Biblioteca.Models.Emprestimo> Emprestimo { get; set; } = default!;
+    // A classe ApplicationDbContext herda de IdentityDbContext, que é uma classe fornecida pelo ASP.NET Core Identity para gerenciar a autenticação e autorização dos usuários.
+public DbSet<API.Biblioteca.Models.EmprestimoLivro> EmprestimoLivro { get; set; } = default!;
+    // A classe ApplicationDbContext herda de IdentityDbContext, que é uma classe fornecida pelo ASP.NET Core Identity para gerenciar a autenticação e autorização dos usuários.
+public DbSet<API.Biblioteca.Models.Devolucao> Devolucao { get; set; } = default!;
     }
 }
